@@ -1,0 +1,324 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --first-color:#EAEAEA;
+  --second-color:#F7F7F7;
+  --third-color:white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--third-color);
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.display-just-center {
+  display: flex;
+  justify-content: center;
+}
+
+/***Header***/
+
+header {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--third-color);
+}
+
+#Logo_Ohmyfood {
+  width: 162px;
+  height: 44px;
+  margin-top: 14px;
+}
+
+.emplacement {
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--first-color);
+  gap: 17px;
+  margin-top: 8.5px;
+}
+
+.search {
+  background-color: var(--first-color);
+  border: none;
+  font-size: 16px;
+}
+
+.Localisation {
+  margin-left: 50px;
+}
+
+/***titres_et_recherches***/
+
+main {
+  width: 100%;
+}
+
+.titres_et_recherches {
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  background-color: var(--second-color);
+}
+
+.titres {
+  h1 {
+    width: 275px;
+    margin-left: 42px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  p {
+    width: 315px;
+    margin-left: 34px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.recherches {
+  margin-top: 40px;
+  background-color: var(--second-color);
+}
+
+.submit {
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  width: 218px;
+  height: 50px;
+  border: none;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+  &:hover {
+    filter: brightness(1.35);
+    font-size: 16.25px;
+    transition-duration: 2s;
+  }
+}
+
+/***fonctionnement***/
+
+.fonctionnement {
+  margin-top: 48px;
+  height: 400px;
+  background-color: var(--third-color);
+}
+
+.titre_fonctionnement {
+  margin-left: 20px;
+  margin-top: 48px;
+
+  h1 {
+    margin-top: 48px;
+  }
+}
+
+.fonctionnement_card {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 24.92px;
+}
+
+.card {
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+  border-radius: 20px;
+  background-color: var(--second-color);
+  width: 322.49px;
+  height: 72.38px;
+  margin-left: 32.51px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+  h2 {
+    font-size: 16px;
+    font-family: 500;
+  }
+}
+
+.number {
+  position: absolute;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  background-color: #9356DC;
+  font-size: 14.1818px;
+  color: white;
+  margin-left: 21px;
+}
+
+.n1 {
+  margin-top: 24.86px;
+}
+
+.n2 {
+  margin-top: 122px;
+}
+
+.n3 {
+  margin-top: 220px;
+}
+
+.fa-solid.fa-store {
+  color: #9356DC;
+}
+
+/***restaurant***/
+
+.restaurants {
+  background-color: var(--second-color);
+}
+
+.titre_restaurant h1 {
+  margin-left: 20px;
+  padding-top: 54px;
+}
+
+.card-resto {
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 251px;
+  border-radius: 15px;
+  background-color: var(--third-color);
+
+  img {
+    width: 100%;
+    height: 56%;
+    border-radius: 15px 15px 0px 0px;
+  }
+}
+
+.card-content {
+  margin-top: -10px;
+  margin-left: 13px;
+}
+
+.card-subtitle {
+  margin-top: -10px;
+}
+
+.card-resto a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-regular.fa-heart {
+  position: absolute;
+  margin-top: -54px;
+  margin-left: 273px;
+  font-size: 22px;
+}
+
+.fa-solid.fa-heart {
+  position: absolute;
+  opacity: 0;
+  margin-top: -54px;
+  margin-left: 273px;
+  font-size: 22px;
+
+  &:hover {
+    opacity: 1;
+    color: #9356DC;
+  }
+}
+
+#NoteEnchantée {
+  object-fit: cover;
+  height: 35%;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 66px;
+}
+
+/***footer***/
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-left: 25px;
+
+  h1 {
+    color: white;
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400px;
+  }
+}
+
+.lienParagraphe {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.fa-solid {
+  &.fa-utensils, &.fa-handshake-angle {
+    color: white;
+  }
+}
+
+.propal {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+}
+
+.fa-solid {
+  &.fa-handshake-angle {
+    font-size: 11px;
+  }
+
+  &.fa-utensils {
+    font-size: 13px;
+  }
+}
+
+.partenaire {
+  display: flex;
+  flex-direction: row;
+  gap: 10.09px;
+}
+
+
+  
