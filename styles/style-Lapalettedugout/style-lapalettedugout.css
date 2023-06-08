@@ -65,8 +65,7 @@ header {
   background-color: var(--third-color);
 }
 header #Logo_Ohmyfood {
-  width: 162px;
-  height: 44px;
+  width: 60%;
   margin-top: 14px;
 }
 header #plat_Lapalettedugout {
@@ -156,11 +155,7 @@ h1 {
 }
 
 .check {
-  position: absolute;
-  padding-left: 350px;
-}
-.check:hover {
-  color: green;
+  position: relative;
 }
 
 /***footer***/

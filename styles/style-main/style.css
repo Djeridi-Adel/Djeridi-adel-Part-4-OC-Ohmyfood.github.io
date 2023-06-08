@@ -40,8 +40,9 @@ header {
 }
 
 #Logo_Ohmyfood {
-  width: 162px;
-  height: 44px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60%;
   margin-top: 14px;
 }
 

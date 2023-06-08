@@ -64,9 +64,8 @@
     background-color: var(--third-color);
 
     #Logo_Ohmyfood {
-        width: 162px;
-        height: 44px;
-        margin-top: 14px;
+      width: 60%;
+      margin-top: 14px;
       }
 
     #plat_Lapalettedugout {
@@ -120,19 +119,14 @@
         margin-top: 12px;
         margin: 12px 12px 0px 13px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         height: 69px;
         background-color: var(--third-color);
         border-radius: 15px;
 
-        .Titre-menu {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-
         h4 {
+            position: relative;
             margin: -19px 0px 0px 310px;         }
     }
   
@@ -161,13 +155,7 @@
       }
 
     .check {
-      position: absolute;
-      padding-left: 350px;
-
-      &:hover {
-        color: white;
-        background-color: green;
-      }
+      position: relative;
     }
   
 
