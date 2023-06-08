@@ -155,6 +155,14 @@ h1 {
   transition-duration: 2s;
 }
 
+.check {
+  position: absolute;
+  padding-left: 350px;
+}
+.check:hover {
+  color: green;
+}
+
 /***footer***/
 footer {
   width: 100%;

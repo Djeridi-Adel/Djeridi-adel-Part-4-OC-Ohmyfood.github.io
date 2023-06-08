@@ -101,9 +101,10 @@ main {
   background-color: var(--bouton-like);
 }
 
-.btn {
-  padding: 0;
+.btn-explore {
+  text-decoration: none;
   color: white;
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
   border-radius: 25px;
