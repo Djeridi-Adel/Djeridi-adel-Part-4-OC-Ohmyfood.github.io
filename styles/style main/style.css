@@ -179,7 +179,6 @@ main {
 }
 
 /***restaurant***/
-
 .restaurants {
   background-color: var(--second-color);
 }
@@ -234,7 +233,10 @@ main {
 }
 .fa-solid.fa-heart:hover {
   opacity: 1;
-  color: #9356DC;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: var(--bouton-like);
 }
 
 #NoteEnchantée {

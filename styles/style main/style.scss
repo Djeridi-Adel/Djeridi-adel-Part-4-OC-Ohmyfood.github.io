@@ -113,7 +113,6 @@ main {
 
   &:hover {
     filter: brightness(1.35);
-    font-size: 16.25px;
     transition-duration: 2s;
   }
 }
@@ -244,7 +243,9 @@ main {
 
   &:hover {
     opacity: 1;
-    color: #9356DC;
+    color: transparent;
+    background-clip: text;
+    background-image: var(--bouton-like);
   }
 }
 
