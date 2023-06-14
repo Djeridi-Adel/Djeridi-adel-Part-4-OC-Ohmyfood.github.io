@@ -1,22 +1,8 @@
 @charset "UTF-8";
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-:root {
-  --first-color:#EAEAEA;
-  --second-color:#F7F7F7;
-  --third-color:white;
-  --bouton-like: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  --tertiaire: #99e2d0;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  background-color: var(--third-color);
-}
+@import "/styles/base.css";
+@import "/styles/layout/header.css";
+@import "/styles/layout/titres-et-recherches.css";
+@import "/styles/layout/fonctionnement.css";
 
 .loader {
   position: fixed;
@@ -66,171 +52,9 @@ body {
     width: 100%;
   }
 }
-.main-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
 .display-just-center {
   display: flex;
   justify-content: center;
-}
-
-/***Header***/
-header {
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--third-color);
-}
-
-#Logo_Ohmyfood {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 60%;
-  margin-top: 14px;
-}
-
-.emplacement {
-  width: 100%;
-  height: 50px;
-  flex-direction: row;
-  align-items: center;
-  background-color: var(--first-color);
-  gap: 17px;
-  margin-top: 8.5px;
-}
-
-.search {
-  background-color: var(--first-color);
-  border: none;
-  font-size: 16px;
-}
-
-.Localisation {
-  margin-left: 50px;
-}
-
-/***titres_et_recherches***/
-main {
-  width: 100%;
-}
-
-.titres_et_recherches {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 350px;
-  background-color: var(--second-color);
-}
-
-.titres h1 {
-  width: 275px;
-  margin-left: 42px;
-  font-weight: 700;
-  font-size: 24px;
-  text-align: center;
-}
-.titres p {
-  width: 315px;
-  margin-left: 34px;
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.recherches {
-  margin-top: 40px;
-  background-color: var(--bouton-like);
-}
-
-.btn-explore {
-  text-decoration: none;
-  color: white;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 25px;
-  width: 218px;
-  height: 50px;
-  border: none;
-  background: var(--bouton-like);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-.btn-explore:hover {
-  filter: brightness(1.25);
-  transition-duration: 2s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/***fonctionnement***/
-.fonctionnement {
-  margin-top: 48px;
-  height: 400px;
-  background-color: var(--third-color);
-}
-
-.titre_fonctionnement {
-  margin-left: 20px;
-  margin-top: 48px;
-}
-.titre_fonctionnement h1 {
-  margin-top: 48px;
-}
-
-.fonctionnement_card {
-  margin-top: 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 24.92px;
-}
-
-.card {
-  flex-direction: row;
-  align-items: center;
-  gap: 27px;
-  border-radius: 20px;
-  background-color: var(--second-color);
-  width: 322.49px;
-  height: 72.38px;
-  margin-left: 32.51px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-}
-.card h2 {
-  font-size: 16px;
-  font-family: 500;
-}
-
-.number {
-  position: absolute;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  align-items: center;
-  background-color: #9356DC;
-  font-size: 14.1818px;
-  color: white;
-  margin-left: 21px;
-}
-
-.n1 {
-  margin-top: 24.86px;
-}
-
-.n2 {
-  margin-top: 122px;
-}
-
-.n3 {
-  margin-top: 220px;
-}
-
-.fa-solid.fa-store {
-  color: #9356DC;
 }
 
 /***restaurant***/
@@ -357,4 +181,6 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 10.09px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
