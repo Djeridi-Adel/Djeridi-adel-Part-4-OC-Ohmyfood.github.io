@@ -1,0 +1,86 @@
+/***footer***/
+
+footer {
+    width: 100%;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer {
+    margin-left: 25px;
+  
+    @media (min-width: 600px) {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      gap: 20px;
+      height: 233px;
+  
+    }
+  
+    #Logo-footer-omf {
+      width: 27%;
+      font-size: 18px;
+      font-weight: 400px;
+      filter: invert(1);
+      margin: 17px 0px 16px 0px;
+      max-width: 146px;
+    }
+  
+    h1 {
+      color: white;
+      font-family: 'Shrikhand';
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 400px;
+    }
+  }
+  
+  .lienParagraphe {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  
+    @media (min-width: 600px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  
+  .fa-solid {
+    &.fa-utensils, &.fa-handshake-angle {
+      color: white;
+    }
+  }
+  
+  .propal {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+  }
+  
+  .fa-solid {
+    &.fa-handshake-angle {
+      font-size: 11px;
+    }
+  
+    &.fa-utensils {
+      font-size: 13px;
+    }
+  }
+  
+  .partenaire {
+    display: flex;
+    flex-direction: row;
+    gap: 10.09px;
+  }

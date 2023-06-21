@@ -27,62 +27,6 @@ body {
   box-sizing: border-box;
 }
 
-.loader {
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  inset: 0;
-  background: black;
-  opacity: 0.8;
-  animation: disappear 200ms 2.9s forwards;
-}
-
-.loader-text {
-  position: relative;
-  font-size: 14vw;
-  color: rgb(39, 37, 37);
-  -webkit-text-stroke: 0.3vw #383d52;
-  letter-spacing: 1px;
-  border-bottom: 10px solid #383d52;
-}
-.loader-text::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-image: var(--bouton-like);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 0vw #383d52;
-  border-bottom: 10px solid #9356DC;
-  overflow: hidden;
-  animation: animate 3s linear infinite;
-}
-
-@keyframes disappear {
-  to {
-    transform: scale(0);
-  }
-}
-@keyframes animate {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-.display-just-center {
-  display: flex;
-  justify-content: center;
-}
-
 /***header***/
 header {
   width: 100%;
@@ -215,12 +159,20 @@ main {
 .fonctionnement_card {
   margin-top: 26px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 24.92px;
 }
-@media (min-width: 995px) {
+@media (min-width: 420px) {
+  .fonctionnement_card {
+    align-items: center;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1032px) {
   .fonctionnement_card {
     justify-content: center;
+    flex-direction: row;
+    gap: 0;
   }
 }
 
@@ -233,8 +185,9 @@ main {
   width: 86%;
   height: 72.38px;
   margin-left: 32.51px;
+  margin-right: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  max-width: 550px;
+  max-width: 350px;
   position: relative;
   flex-grow: 1;
 }
@@ -309,19 +262,23 @@ main {
   height: 56%;
   border-radius: 15px 15px 0px 0px;
 }
+.card-resto a {
+  text-decoration: none;
+  color: black;
+}
 
 .card-content {
   margin-top: -10px;
   margin-left: 13px;
 }
+@media (min-width: 400px) {
+  .card-content {
+    margin-top: -17px;
+  }
+}
 
 .card-subtitle {
   margin-top: -10px;
-}
-
-.card-resto a {
-  text-decoration: none;
-  color: black;
 }
 
 .card-txt {
@@ -335,6 +292,11 @@ main {
   margin-top: -54px;
   margin-left: 273px;
   font-size: 22px;
+}
+@media (min-width: 400px) {
+  .fa-regular.fa-heart {
+    margin-left: 305px;
+  }
 }
 
 .fa-solid.fa-heart {
@@ -350,6 +312,11 @@ main {
   background-clip: text;
   background-image: var(--bouton-like);
   transition: all 500ms;
+}
+@media (min-width: 400px) {
+  .fa-solid.fa-heart {
+    margin-left: 305px;
+  }
 }
 
 #NoteEnchantée {
@@ -434,6 +401,62 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 10.09px;
+}
+
+.loader {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  inset: 0;
+  background: black;
+  opacity: 0.8;
+  animation: disappear 200ms 2.9s forwards;
+}
+
+.loader-text {
+  position: relative;
+  font-size: 14vw;
+  color: rgb(39, 37, 37);
+  -webkit-text-stroke: 0.3vw #383d52;
+  letter-spacing: 1px;
+  border-bottom: 10px solid #383d52;
+}
+.loader-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-image: var(--bouton-like);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0vw #383d52;
+  border-bottom: 10px solid #9356DC;
+  overflow: hidden;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.display-just-center {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

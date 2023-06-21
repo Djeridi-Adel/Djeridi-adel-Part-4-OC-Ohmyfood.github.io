@@ -1,0 +1,110 @@
+/***restaurant***/
+
+.restaurants {
+    background-color: var(--second-color);
+    width: 100%;
+    
+  }
+  
+  .restaurant-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 66px;
+    
+    @media (min-width: 476px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  
+  .titre_restaurant h1 {
+    margin-left: 20px;
+    padding-top: 54px;
+  
+    @media (min-width: 995px) {
+      margin-left: 4.5%;
+    }
+    
+  }
+  
+  .card-resto {
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 90.7%;
+    height: 251px;
+    border-radius: 15px;
+    background-color: var(--third-color);
+    max-width: 378px;
+    
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 56%;
+      border-radius: 15px 15px 0px 0px;
+    }
+      a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  
+  .card-content {
+    margin-top: -10px;
+    margin-left: 13px;
+
+    @media (min-width: 400px) {
+      margin-top: -17px;
+    }
+  }
+  
+  .card-subtitle {
+    margin-top: -10px;
+  }
+  
+  
+  .card-txt {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .fa-regular.fa-heart {
+    position: absolute;
+    margin-top: -54px;
+    margin-left: 273px;
+    font-size: 22px;
+
+    @media (min-width: 400px) {
+      margin-left: 305px;
+    }
+  }
+  
+  .fa-solid.fa-heart {
+    position: absolute;
+    opacity: 0;
+    margin-top: -54px;
+    margin-left: 273px;
+    font-size: 22px;
+  
+    &:hover {
+      opacity: 1;
+      color: transparent;
+      background-clip: text;
+      background-image: var(--bouton-like);
+      transition: all 500ms;
+    }
+
+    @media (min-width: 400px) {
+      margin-left: 305px;
+    }
+  }
+  
+  #NoteEnchantée {
+    object-fit: cover;
+    height: 35%;
+  }
