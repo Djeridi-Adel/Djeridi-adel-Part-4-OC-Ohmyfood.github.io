@@ -1,0 +1,36 @@
+@mixin gradient {
+    background : linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.96%);
+}
+
+@mixin button {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    border-radius: 25px;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    &:hover {
+        filter: brightness(1.25);
+        transition-duration: 2s;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+    }
+}
+
+
+@mixin heart-card {
+    position: absolute;
+    margin-top: -51px;
+    margin-left: 312px;
+    font-size: 22px;
+}
+
+@mixin heart-hover {
+    &:hover {
+        opacity: 1;
+        color: transparent;
+        background-clip: text;
+        background-image: var(--bouton-like);
+        transition: all 200ms ease;
+      }
+}
