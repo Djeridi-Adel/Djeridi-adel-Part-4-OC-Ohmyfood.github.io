@@ -1,0 +1,67 @@
+@import "../layout/footer.scss";
+@import "../base.scss";
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+
+.main-container_resto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+  h1 {
+    font-family: 'Shrikhand';
+    font-size: 28px;
+    margin-left: 17px;
+  }
+
+  h2 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 0px 0px 12px;
+    text-transform: uppercase;
+    position: relative;
+
+      &::after {
+        content: "";
+        height: 3px;
+        width: 40px;
+        background-color: $tertiaire;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 20px;
+    }
+  }
+
+  h3 { 
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px 0px 0px 15px;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin: 5px 0px 0px 15px;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $third-color;
+  }
+  
+  .display-just-center {
+    display: flex;
+    justify-content: center;
+  }
+}

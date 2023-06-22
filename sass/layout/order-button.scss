@@ -1,0 +1,19 @@
+.submit {
+    margin: 40px 0 40px 94.5px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 186px;
+    @include button;
+    @include gradient;
+    
+  }
+
+
+
+.commandez {
+  @media (min-width: 400px) {
+    display: flex;
+    justify-content: center;
+    margin-left: -94.5px;
+  }
+}

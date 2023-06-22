@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Shrikhand&display=swap");
@@ -265,8 +264,9 @@ main {
 .card-resto img {
   object-fit: cover;
   width: 100%;
-  height: 56%;
+  height: 100%;
   border-radius: 15px 15px 0px 0px;
+  max-height: 185px;
 }
 .card-resto a {
   text-decoration: none;
@@ -307,8 +307,8 @@ main {
 }
 
 .fa-solid.fa-heart {
-  position: absolute;
   opacity: 0;
+  position: absolute;
   margin-top: -54px;
   margin-left: 273px;
   font-size: 22px;
@@ -317,18 +317,14 @@ main {
   opacity: 1;
   color: transparent;
   background-clip: text;
-  background-image: var(--bouton-like);
-  transition: all 500ms;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.96%);
+  transition: all 200ms ease;
 }
 @media (min-width: 400px) {
   .fa-solid.fa-heart {
     margin-left: 305px;
   }
-}
-
-#NoteEnchantée {
-  object-fit: cover;
-  height: 35%;
 }
 
 /***footer***/
@@ -546,8 +542,6 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  /***Header***/
-  /***Titre***/
 }
 .main-container_resto h1 {
   font-family: "Shrikhand";
@@ -595,13 +589,15 @@ body {
   display: flex;
   justify-content: center;
 }
-.main-container_resto header {
+
+/***Header***/
+header {
   width: 100%;
   flex-direction: column;
   align-items: center;
   background-color: white;
 }
-.main-container_resto header .entete {
+header .entete {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -610,12 +606,12 @@ body {
   width: 100%;
   margin-top: -48px;
 }
-.main-container_resto header #Logo_Ohmyfood {
+header #Logo_Ohmyfood {
   object-fit: cover;
   width: 60%;
   max-width: 380px;
 }
-.main-container_resto header .fleche-retour {
+header .fleche-retour {
   width: 100%;
   position: absolute;
   font-size: 16px;
@@ -623,21 +619,23 @@ body {
   left: 23px;
 }
 @media (min-width: 500px) {
-  .main-container_resto header .fleche-retour {
+  header .fleche-retour {
     font-size: 23px;
   }
 }
-.main-container_resto #img-plat-principale-resto {
+
+#img-plat-principale-resto {
   width: 100%;
   height: 20%;
   margin-top: 15px;
   object-fit: cover;
 }
 @media (min-width: 400px) {
-  .main-container_resto #img-plat-principale-resto {
+  #img-plat-principale-resto {
     max-height: 450px;
   }
 }
+
 .main-container_resto main {
   width: 100%;
   background-color: #eaeaea;
@@ -672,7 +670,8 @@ body {
   opacity: 1;
   color: transparent;
   background-clip: text;
-  background-image: var(--bouton-like);
+  -webkit-background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.96%);
   transition: all 200ms ease;
 }
 .main-container_resto .card_menu {
@@ -681,7 +680,7 @@ body {
   flex-direction: row;
   margin: 12px 12px 0px 13px;
   height: 69px;
-  background-color: var(--third-color);
+  background-color: white;
   border-radius: 15px;
   overflow: hidden;
   white-space: nowrap;
@@ -721,7 +720,7 @@ body {
 .main-container_resto .menu_check {
   width: 17.5%;
   margin-right: -17.5%;
-  background-color: var(--tertiaire);
+  background-color: #99e2d0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -731,7 +730,7 @@ body {
 .main-container_resto .menu_check .check-logo {
   background: white;
   border-radius: 50%;
-  color: var(--tertiaire);
+  color: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -754,7 +753,8 @@ body {
 .main-container_resto .espace-titres {
   margin-top: 40px;
 }
-.main-container_resto .submit {
+
+.submit {
   margin: 40px 0 40px 94.5px;
   font-size: 16px;
   font-weight: 500;
@@ -768,13 +768,14 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.96%);
 }
-.main-container_resto .submit:hover {
+.submit:hover {
   filter: brightness(1.25);
   transition-duration: 2s;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
+
 @media (min-width: 400px) {
-  .main-container_resto .commandez {
+  .commandez {
     display: flex;
     justify-content: center;
     margin-left: -94.5px;

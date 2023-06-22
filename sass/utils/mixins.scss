@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin gradient {
     background : linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.96%);
 }
@@ -30,7 +32,15 @@
         opacity: 1;
         color: transparent;
         background-clip: text;
-        background-image: var(--bouton-like);
+        -webkit-background-clip: text;
+        background-image: $gradient;
         transition: all 200ms ease;
       }
+}
+
+@mixin index-heart {
+    position: absolute;
+    margin-top: -54px;
+    margin-left: 273px;
+    font-size: 22px;
 }

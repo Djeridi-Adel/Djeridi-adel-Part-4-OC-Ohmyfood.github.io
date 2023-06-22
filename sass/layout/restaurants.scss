@@ -1,3 +1,5 @@
+@import "../utils/mixins.scss";
+
 /***restaurant***/
 
 .restaurants {
@@ -45,8 +47,9 @@
     img {
       object-fit: cover;
       width: 100%;
-      height: 56%;
+      height: 100%;
       border-radius: 15px 15px 0px 0px;
+      max-height: 185px;
     }
       a {
       text-decoration: none;
@@ -76,10 +79,7 @@
   }
   
   .fa-regular.fa-heart {
-    position: absolute;
-    margin-top: -54px;
-    margin-left: 273px;
-    font-size: 22px;
+    @include index-heart;
 
     @media (min-width: 400px) {
       margin-left: 305px;
@@ -87,26 +87,12 @@
   }
   
   .fa-solid.fa-heart {
-    position: absolute;
     opacity: 0;
-    margin-top: -54px;
-    margin-left: 273px;
-    font-size: 22px;
-  
-    &:hover {
-      opacity: 1;
-      color: transparent;
-      background-clip: text;
-      background-image: var(--bouton-like);
-      transition: all 500ms;
-    }
+    @include index-heart;
+    @include heart-hover;
 
     @media (min-width: 400px) {
       margin-left: 305px;
     }
   }
   
-  #NoteEnchantée {
-    object-fit: cover;
-    height: 35%;
-  }

@@ -6,7 +6,10 @@
 @import "sass/layout/footer";
 @import "sass/utils/variables";
 @import "sass/base.scss";
-@import "pages-restaurant";
+@import "sass/pages/pages-restaurant.scss";
+@import "sass/layout/header_resto.scss";
+@import "sass/layout/menu-card.scss";
+@import "sass/layout/order-button.scss";
 
 
 .loader {
