@@ -71,7 +71,7 @@ main {
   align-items: center;
   width: 100%;
   height: 350px;
-  background-color: var(--second-color);
+  background-color: #f7f7f7;
 }
 
 .titres h1 {
@@ -107,7 +107,6 @@ main {
 
 .recherches {
   margin-top: 40px;
-  background-color: var(--bouton-like);
   width: 70%;
 }
 
@@ -196,7 +195,7 @@ main {
 }
 .card h2 {
   font-size: 16px;
-  font-family: 500;
+  font-weight: 500;
   font-family: "Roboto";
 }
 
@@ -354,7 +353,7 @@ footer {
 .footer #Logo-footer-omf {
   width: 27%;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   filter: invert(1);
   margin: 17px 0px 16px 0px;
   max-width: 146px;
@@ -364,7 +363,7 @@ footer {
   font-family: "Shrikhand";
   font-style: italic;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .lienParagraphe {
@@ -458,7 +457,7 @@ footer {
 .footer #Logo-footer-omf {
   width: 27%;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   filter: invert(1);
   margin: 17px 0px 16px 0px;
   max-width: 146px;
@@ -468,7 +467,7 @@ footer {
   font-family: "Shrikhand";
   font-style: italic;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .lienParagraphe {
@@ -735,7 +734,7 @@ header .fleche-retour {
   justify-content: center;
   align-items: center;
   width: 20px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
 @media (min-width: 900px) {
   .main-container_resto .menu_check {
