@@ -13,7 +13,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: var(--third-color);
+  background-color: white;
 }
 
 .main-container {
@@ -30,14 +30,26 @@ header {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: var(--third-color);
+  background-color: white;
 }
 
 #Logo_Ohmyfood {
-  object-fit: cover;
-  width: 60%;
+  font-family: "shrikhand";
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
   margin-top: 14px;
-  max-width: 380px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  #Logo_Ohmyfood {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #Logo_Ohmyfood {
+    font-size: 63px;
+  }
 }
 
 .emplacement {
@@ -45,13 +57,13 @@ header {
   height: 50px;
   flex-direction: row;
   align-items: center;
-  background-color: var(--first-color);
+  background-color: #eaeaea;
   gap: 17px;
   margin-top: 8.5px;
 }
 
 .search {
-  background-color: var(--first-color);
+  background-color: #eaeaea;
   border: none;
   font-size: 16px;
   font-family: "Roboto";
@@ -82,7 +94,7 @@ main {
   text-align: center;
   font-family: "Roboto";
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .titres h1 {
     width: 100%;
     font-size: 28px;
@@ -97,7 +109,7 @@ main {
   text-align: center;
   font-family: "Roboto";
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .titres p {
     width: 100%;
     font-size: 22px;
@@ -129,7 +141,7 @@ main {
   transition-duration: 2s;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .btn-explore {
     width: 400px;
     font-size: 18px;
@@ -141,14 +153,14 @@ main {
   margin-top: 48px;
   height: auto;
   margin-bottom: 68px;
-  background-color: var(--third-color);
+  background-color: white;
 }
 
 .titre_fonctionnement {
   margin-left: 20px;
   margin-top: 48px;
 }
-@media (min-width: 995px) {
+@media (min-width: 768px) {
   .titre_fonctionnement {
     margin-left: 4.5%;
   }
@@ -164,13 +176,13 @@ main {
   flex-direction: column;
   gap: 24.92px;
 }
-@media (min-width: 420px) {
+@media (min-width: 768px) {
   .fonctionnement_card {
     align-items: center;
     margin-left: 0;
   }
 }
-@media (min-width: 1032px) {
+@media (min-width: 1024px) {
   .fonctionnement_card {
     justify-content: center;
     flex-direction: row;
@@ -183,7 +195,7 @@ main {
   align-items: center;
   gap: 27px;
   border-radius: 20px;
-  background-color: var(--second-color);
+  background-color: #f7f7f7;
   width: 86%;
   height: 72.38px;
   margin-left: 32.51px;
@@ -220,7 +232,7 @@ main {
 
 /***restaurant***/
 .restaurants {
-  background-color: var(--second-color);
+  background-color: #f7f7f7;
   width: 100%;
 }
 
@@ -229,8 +241,9 @@ main {
   flex-direction: column;
   gap: 20px;
   padding-bottom: 66px;
+  align-items: center;
 }
-@media (min-width: 476px) {
+@media (min-width: 768px) {
   .restaurant-card {
     display: flex;
     flex-direction: row;
@@ -244,20 +257,19 @@ main {
   padding-top: 54px;
   font-family: "Roboto";
 }
-@media (min-width: 995px) {
+@media (min-width: 1024px) {
   .titre_restaurant h1 {
     margin-left: 4.5%;
   }
 }
 
 .card-resto {
-  margin-left: 14px;
   display: flex;
   flex-direction: column;
   width: 90.7%;
   height: 251px;
   border-radius: 15px;
-  background-color: var(--third-color);
+  background-color: white;
   max-width: 378px;
 }
 .card-resto img {
@@ -277,7 +289,7 @@ main {
   margin-left: 13px;
   font-family: "Roboto";
 }
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   .card-content {
     margin-top: -17px;
   }
@@ -299,7 +311,7 @@ main {
   margin-left: 273px;
   font-size: 22px;
 }
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   .fa-regular.fa-heart {
     margin-left: 305px;
   }
@@ -320,7 +332,7 @@ main {
   background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.96%);
   transition: all 200ms ease;
 }
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   .fa-solid.fa-heart {
     margin-left: 305px;
   }
@@ -337,7 +349,7 @@ footer {
 .footer {
   margin-left: 25px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .footer {
     width: 100%;
     display: flex;
@@ -351,12 +363,10 @@ footer {
   }
 }
 .footer #Logo-footer-omf {
-  width: 27%;
+  font-family: "shrikhand";
   font-size: 18px;
   font-weight: 400;
-  filter: invert(1);
   margin: 17px 0px 16px 0px;
-  max-width: 146px;
 }
 .footer h1 {
   color: white;
@@ -372,7 +382,7 @@ footer {
   gap: 7px;
   font-family: "Roboto";
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .lienParagraphe {
     flex-direction: row;
     flex-wrap: wrap;
@@ -418,7 +428,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: var(--third-color);
+  background-color: white;
 }
 
 .main-container {
@@ -441,7 +451,7 @@ footer {
 .footer {
   margin-left: 25px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .footer {
     width: 100%;
     display: flex;
@@ -455,12 +465,10 @@ footer {
   }
 }
 .footer #Logo-footer-omf {
-  width: 27%;
+  font-family: "shrikhand";
   font-size: 18px;
   font-weight: 400;
-  filter: invert(1);
   margin: 17px 0px 16px 0px;
-  max-width: 146px;
 }
 .footer h1 {
   color: white;
@@ -476,7 +484,7 @@ footer {
   gap: 7px;
   font-family: "Roboto";
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .lienParagraphe {
     flex-direction: row;
     flex-wrap: wrap;
@@ -522,7 +530,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: var(--third-color);
+  background-color: white;
 }
 
 .main-container {
@@ -592,6 +600,7 @@ body {
 /***Header***/
 header {
   width: 100%;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   background-color: white;
@@ -603,33 +612,42 @@ header .entete {
   justify-content: center;
   position: relative;
   width: 100%;
-  margin-top: -48px;
+  margin-top: 1%;
 }
-header #Logo_Ohmyfood {
-  object-fit: cover;
-  width: 60%;
-  max-width: 380px;
+header .entete #Logo_Ohmyfood {
+  font-size: 40px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  header .entete #Logo_Ohmyfood {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  header .entete #Logo_Ohmyfood {
+    font-size: 63px;
+  }
 }
 header .fleche-retour {
-  width: 100%;
   position: absolute;
   font-size: 16px;
   color: black;
-  left: 23px;
+  left: 4%;
+  top: 40%;
 }
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   header .fleche-retour {
     font-size: 23px;
+    top: 30%;
   }
 }
 
 #img-plat-principale-resto {
   width: 100%;
-  height: 20%;
-  margin-top: 15px;
+  max-height: 250px;
   object-fit: cover;
 }
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   #img-plat-principale-resto {
     max-height: 450px;
   }
@@ -642,12 +660,12 @@ header .fleche-retour {
   position: relative;
   margin-top: -55px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .main-container_resto main {
     max-width: 1200px;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 1024px) {
   .main-container_resto .nom-resto {
     margin-left: 36%;
   }
@@ -736,7 +754,7 @@ header .fleche-retour {
   width: 20px;
   aspect-ratio: 1/1;
 }
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .main-container_resto .menu_check {
     width: 10.5%;
     margin-right: -10.5%;
@@ -754,7 +772,7 @@ header .fleche-retour {
 }
 
 .submit {
-  margin: 40px 0 40px 94.5px;
+  margin: 40px 0 40px 0px;
   font-size: 16px;
   font-weight: 500;
   width: 186px;
@@ -773,12 +791,10 @@ header .fleche-retour {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 400px) {
-  .commandez {
-    display: flex;
-    justify-content: center;
-    margin-left: -94.5px;
-  }
+.commandez {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loader {

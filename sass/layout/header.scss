@@ -1,17 +1,29 @@
+@import "../utils/variables.scss";
+
 /***header***/
 
 header {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-color: var(--third-color);
+    background-color: $third-color;
   }
   
   #Logo_Ohmyfood {
-    object-fit: cover;
-    width: 60%;
+    font-family: 'shrikhand';
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
     margin-top: 14px;
-    max-width: 380px;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 63px;
+    }
   }
   
   .emplacement {
@@ -19,13 +31,13 @@ header {
     height: 50px;
     flex-direction: row;
     align-items: center;
-    background-color: var(--first-color);
+    background-color: $first-color;
     gap: 17px;
     margin-top: 8.5px;
   }
   
   .search {
-    background-color: var(--first-color);
+    background-color: $first-color;
     border: none;
     font-size: 16px;
     font-family: 'Roboto';

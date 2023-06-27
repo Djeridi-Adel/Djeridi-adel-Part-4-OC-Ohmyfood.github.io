@@ -3,9 +3,8 @@
 /***restaurant***/
 
 .restaurants {
-    background-color: var(--second-color);
+    background-color: $second-color;
     width: 100%;
-    
   }
   
   .restaurant-card {
@@ -13,8 +12,9 @@
     flex-direction: column;
     gap: 20px;
     padding-bottom: 66px;
+    align-items: center;
     
-    @media (min-width: 476px) {
+    @media (min-width: 768px) {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -28,20 +28,19 @@
     padding-top: 54px;
     font-family: 'Roboto';
   
-    @media (min-width: 995px) {
+    @media (min-width: 1024px) {
       margin-left: 4.5%;
     }
     
   }
   
   .card-resto {
-    margin-left: 14px;
     display: flex;
     flex-direction: column;
     width: 90.7%;
     height: 251px;
     border-radius: 15px;
-    background-color: var(--third-color);
+    background-color: $third-color;
     max-width: 378px;
     
     img {
@@ -62,7 +61,7 @@
     margin-left: 13px;
     font-family: 'Roboto';
 
-    @media (min-width: 400px) {
+    @media (min-width: 768px) {
       margin-top: -17px;
     }
   }
@@ -81,7 +80,7 @@
   .fa-regular.fa-heart {
     @include index-heart;
 
-    @media (min-width: 400px) {
+    @media (min-width: 768px) {
       margin-left: 305px;
     }
   }
@@ -91,7 +90,7 @@
     @include index-heart;
     @include heart-hover;
 
-    @media (min-width: 400px) {
+    @media (min-width: 768px) {
       margin-left: 305px;
     }
   }

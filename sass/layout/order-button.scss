@@ -1,5 +1,5 @@
 .submit {
-    margin: 40px 0 40px 94.5px;
+    margin: 40px 0 40px 0px;
     font-size: 16px;
     font-weight: 500;
     width: 186px;
@@ -11,9 +11,7 @@
 
 
 .commandez {
-  @media (min-width: 400px) {
-    display: flex;
-    justify-content: center;
-    margin-left: -94.5px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

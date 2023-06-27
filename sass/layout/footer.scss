@@ -10,7 +10,7 @@ footer {
   .footer {
     margin-left: 25px;
   
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -24,12 +24,10 @@ footer {
     }
   
     #Logo-footer-omf {
-      width: 27%;
+      font-family: 'shrikhand';
       font-size: 18px;
       font-weight: 400;
-      filter: invert(1);
       margin: 17px 0px 16px 0px;
-      max-width: 146px;
     }
   
     h1 {
@@ -47,7 +45,7 @@ footer {
     gap: 7px;
     font-family: 'Roboto';
   
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
     }

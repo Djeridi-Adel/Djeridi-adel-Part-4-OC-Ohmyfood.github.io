@@ -4,14 +4,14 @@
     margin-top: 48px;
     height: auto;
     margin-bottom: 68px;
-    background-color: var(--third-color);
+    background-color: $third-color;
   }
   
   .titre_fonctionnement {
     margin-left: 20px;
     margin-top: 48px;
   
-    @media (min-width: 995px) {
+    @media (min-width: 768px) {
       margin-left: 4.5%;
     }
   
@@ -27,11 +27,11 @@
     flex-direction: column;
     gap: 24.92px;
   
-    @media (min-width: 420px) {
+    @media (min-width: 768px) {
       align-items: center;
       margin-left: 0;
     }
-    @media (min-width: 1032px) {
+    @media (min-width: 1024px) {
       justify-content: center;
       flex-direction: row;
       gap: 0;
@@ -43,7 +43,7 @@
     align-items: center;
     gap: 27px;
     border-radius: 20px;
-    background-color: var(--second-color);
+    background-color: $second-color;
     width: 86%;
     height: 72.38px;
     margin-left: 32.51px;
